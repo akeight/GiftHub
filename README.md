@@ -1,4 +1,4 @@
-# gift_planner
+# GiftHub
 
 A new Flutter project.
 
