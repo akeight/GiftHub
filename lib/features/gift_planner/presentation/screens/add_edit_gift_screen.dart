@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/gift_idea.dart'; // Import the model
+import '../../data/models/gift_idea.dart'; // Import the model
 
 // This screen is now just responsible for the form.
 class AddEditGiftScreen extends StatefulWidget {

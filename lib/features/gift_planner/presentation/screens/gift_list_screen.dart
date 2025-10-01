@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/gift_idea.dart'; // Import the model
+import '../../data/models/gift_idea.dart'; // Import the model
 import 'add_edit_gift_screen.dart'; // Import the other screen
 
 // This widget is now focused solely on displaying and managing the list.
@@ -12,9 +12,9 @@ class GiftListScreen extends StatefulWidget {
 
 class _GiftListScreenState extends State<GiftListScreen> {
   final List<GiftIdea> _giftIdeas = [
-    GiftIdea(personName: 'Mom', idea: 'A new cookbook', isPurchased: true),
-    GiftIdea(personName: 'Dad', idea: 'Fishing lure'),
-    GiftIdea(personName: 'Sarah', idea: 'Concert tickets'),
+    // GiftIdea(personName: 'Mom', idea: 'A new cookbook', isPurchased: true),
+    // GiftIdea(personName: 'Dad', idea: 'Fishing lure'),
+    // GiftIdea(personName: 'Sarah', idea: 'Concert tickets'),
   ];
 
   void _togglePurchased(GiftIdea gift) {
@@ -52,7 +52,7 @@ class _GiftListScreenState extends State<GiftListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Gift Idea Planner 🎁')),
+      appBar: AppBar(title: const Text('Gift Idea Planner')),
       body: _giftIdeas.isEmpty
           ? const Center(
               child: Text(
